@@ -1,34 +1,12 @@
-<!DOCTYPE html>
-
-
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<title>uniMail</title>
-</head>
-<body>
-
-	<form>
-
-		<!-- Hidden Required Fields -->
-		<input type="hidden" name="project_name" value="Магазин электроники">
-		<input type="hidden" name="admin_email" value="sn2879@i.ua">
-		<input type="hidden" name="form_subject" value="Заявка на покупку">
-		<!-- END Hidden Required Fields -->
-
-		<input type="text" name="Name" placeholder="Имя" required><br>
-		<input type="text" name="E-mail" placeholder="Адрес E-mail..." required><br>
-		<input type="text" name="Phone" placeholder="Телефон"><br>
-		<button>Send</button>
-
-	</form>
-	
-	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="script.js"></script>
-
-	
-</body>
-
-</html>
+<FORM ACTION="send.php" METHOD=post>
+<TABLE BORDER=0>
+<tr><td>Тема</td><td>
+<input type=text name="sub" cols=40>
+</td></tr>
+<TR>
+<TD colspan=2>
+Сообщение: <BR><textarea name="mes" cols=40 rows=5></textarea></TD></TR>
+<TR>
+<TD colspan=2 align=center><input type=submit value="Отправить"> <input type=reset value="Очистить"></TD></TR>
+</TABLE></FORM> 
 
